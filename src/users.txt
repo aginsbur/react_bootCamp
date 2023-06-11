@@ -1,0 +1,29 @@
+[
+    
+    {
+    "name":"playmobile",
+    "info":"police station set",
+    "category":"dolls",
+    img_url:"",
+    price:20
+    }
+
+    {
+    "name":"cat",
+    "info":"white",
+    "category":"stuffed animals",
+    img_url:"",
+    price:20
+    }
+
+    {
+    "name":"glue",
+    "info":"clear",
+     "category":"arts and crafts",
+    img_url:"",
+    price:20
+    }
+
+
+  
+]
