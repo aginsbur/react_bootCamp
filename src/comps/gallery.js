@@ -16,7 +16,7 @@ export default class Gallery extends Component {
 
   render() {
     return (
-      <div className='text-center'>
+      <div className="p-2 text-center" style={{border:"2px solid black"}}>
         <img src={"/images/"+this.pics_ar[this.state.counter]} alt="cake"  className='col-md-4' />
         <h3>{this.state.counter}</h3>
         <br />

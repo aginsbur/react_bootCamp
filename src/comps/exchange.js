@@ -13,8 +13,8 @@ export default class Exchange extends Component {
 
   render() {
     return (
-      <div className='col-md-4'>
-        <h2>Enter the currencyL</h2>
+      <div className='p-2' style={{border:"2px solid black"}}>
+        <h2>Enter the currency</h2>
         <select ref={this.currencyRef} onChange={this.onAmountChange} className="form-select">
           <option value="3.57">USD</option>
           <option value="3.51">Euro</option>
