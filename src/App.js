@@ -1,20 +1,20 @@
 import React from 'react'
-import './App.css'
-import AppHw from './comps/appHw';
-import AppHw5Missions from './comps/appHw5Missions';
-import AppDate from './comps_date/appDate';
-
+import './App.css';
+import AppHw from './hwComps/AppHw';
+//import ShopList from './comps_loop/shopList';
 
 function App() {
-  return (
-    <React.Fragment>
-      <h1 className='text-danger'>React</h1>
-      <hr/>
-      {/* <AppHw/> */}
-      {/* <AppDate/> */}
-      {<AppHw5Missions/>}
-    </React.Fragment>
-  );
+    // <React.Fragment> -> משמש בתור תגית
+    // עוטפת אבל שלא מרונדרת בדפדפן
+    return (
+        <React.Fragment>
+            <h1 className='text-danger'>React</h1>
+            <hr />
+            {/* <ShopList/> */}
+            <AppHw />
+        </React.Fragment>
+    );
 }
 
 export default App;
+

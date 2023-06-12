@@ -1,0 +1,10 @@
+API משימת הביטקויין:
+http://fs1.co.il/bus/bitcoin.php
+
+משימת ה API של הסרטים:
+https://api.themoviedb.org/3/list/3?api_key=d4bc3c640586e7f90dc68d8b300247ff&language=en-US
+
+ולינקים לאיפה שהתמונות נמצאות:
+https://image.tmdb.org/t/p/w500
+
+
