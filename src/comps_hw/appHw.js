@@ -1,6 +1,6 @@
 import React from 'react'
 import VipList from './vipList'
-//import AppAtlas from './appAtlas'
+import AppAtlas from './appAtlas'
 
 
 function AppHw() {
