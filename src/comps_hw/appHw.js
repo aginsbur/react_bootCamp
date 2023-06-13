@@ -6,7 +6,7 @@ import VipList from './vipList'
 function AppHw() {
     return (
         <React.Fragment>
-            {/* <AppAtlas /> */}
+            <AppAtlas />
             <hr />
             <VipList />
         </React.Fragment>
