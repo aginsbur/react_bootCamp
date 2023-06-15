@@ -1,38 +1,39 @@
+import React, { useState } from 'react'
+
+export default function Casino() {
+    const [diceRoll, setDiceRoll] = useState(0);
+    const [coins, setCoins] = useState(0);
+    diceArr=[];
+    return (
+        <div className='col-md-4'>
+            <div className='shadow p-2 overflow-hidden h-100'>
+                <img src={`${diceArr[diceRoll]}`} className='w-50 border'/>
+                <h4>Coins: {coins}</h4>
+                <button onClick={() => {
+                    setDiceRoll(_.random(1,6));
+                    setCoins(coins-1);
+                }}>Roll</button>
+            </div>
+        </div>
+    )
+}
+
 import React, { Component } from 'react'
-import VideoComp from './videoComp';
+import ChildComp from "./childComp";
 
 export default class Casino extends Component {
+    state = { color:"silver"}
 
-    // state = { ar: []};
+    changeTextColor=(_newColor)=>{
+        this.setState({color:_newColor})
+    }
 
-    // componentDidMount() {
-    //     this.doApi();
-    // }
-
-    // doApi = async () => {
-    //     let url = "https://api.themoviedb.org/3/list/3?api_key=d4bc3c640586e7f90dc68d8b300247ff&language=en-US";
-    //     let resp = await fetch(url);
-    //     let data = await resp.json();
-    //     console.log(data);
-    //     this.setState({ ar: data });
-    // }
-
-
-    // render() {
-    //     return (
-    //         <div className='container'>
-    //             <h2 className='title2'>welcome to service app of movies!</h2>
-    //             <div className='row'>
-    //                 {this.state.ar.map(item => {
-    //                     return (
-    //                         <VideoComp key={item.id} item={item} />
-    //                     )
-    //                 })}
-    //             </div>
-    //         </div>
-    //     )
-    // }
-    render(){return(
-        <h2>casino</h2>
-    )}
+    render() {
+        return (
+            <div className='text-center'>
+                <h1 style={{color:this.state.color}}>this is parent comp</h1>
+                <ChildComp changeTextColor={this.changeTextColor} />
+            </div>
+        )
+    }
 }
