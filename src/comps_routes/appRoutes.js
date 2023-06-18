@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {BrowserRouter,Routes,Route , Link} from "react-router-dom"
-// import CarsList from '../comps_cars/carsList'
+import CarsList from '../comps_car/carList'
 // import AppAtlas from '../comps_hw/appAtlas'
 // import VipList from '../comps_hw/vipList'
 // import AppPixa from '../comps_pixa/appPixa'
@@ -8,7 +8,7 @@ import About from './about'
 import Home from './home'
 import {AppContext} from "../context/context"
 import Counter from './counter'
-// import AppCasino from '../comps_casino/appCasino'
+import AppCasino from '../comps_casino/appCasino'
 
 export default function AppRoutes() {
   const [number,setNumber] = useState(4);
@@ -32,8 +32,8 @@ export default function AppRoutes() {
         {/* <Link to="/vip">Vip</Link> | */}
         {/* <Link to="/atlas">Atlas</Link> | */}
         {/* <Link to="/pixa/cats">Pixa</Link> | */}
-        {/* <Link to="/cars">Cars</Link> | */}
-        {/* <Link to="/casino">Casino</Link> */}
+        <Link to="/cars">Cars</Link> |
+        <Link to="/casino">Casino</Link>
       </header>
         {/* outlet */}
         <Routes>
@@ -44,9 +44,9 @@ export default function AppRoutes() {
           {/* <Route path="/vip" element={<VipList />} /> */}
           {/* <Route path="/atlas" element={<AppAtlas />} /> */}
           {/* <Route path="/pixa/:searchQ" element={<AppPixa />} /> */}
-          {/* <Route path="/casino" element={<AppCasino />} /> */}
+          <Route path="/casino" element={<AppCasino />} />
           {/* ?s= */}
-          {/* <Route path="/cars" element={<CarsList />} /> */}
+          <Route path="/cars" element={<CarsList />} />
         </Routes>
         {/* outlet */}
       <footer className='p-2 container bg-danger'>footer</footer>

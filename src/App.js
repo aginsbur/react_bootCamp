@@ -6,8 +6,8 @@ import AppRoutes from './comps_routes/appRoutes';
 function App() {
   return (
    <div>
-    {/* <AppRoutes/> */}
-    <AppHw/>
+    <AppRoutes/>
+    {/* <AppHw/> */}
    </div>
   );
 }

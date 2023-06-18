@@ -11,7 +11,8 @@ export default function About() {
       // יפעיל את הפונקציה ברגע שהקומפ נעלם
       // או החלפת לינק או שהקומפ הוא פריט ברשימה
       // ריאקטבית כגון רשימת קניות /קופה וכו
-      console.log("about comp unmount")
+    //  console.log("about comp unmount");
+      alert("about comp unmount");
     }
   },[])
 
